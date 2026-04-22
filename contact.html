@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | InfraUp Construction</title>
+    <meta name="description" content="Get in touch with InfraUp Construction — call, email, or visit us at Musaffah M4, Abu Dhabi, UAE.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">InfraUp <span>Construction</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact</span>
+                </div>
+                <h1>Get In Touch</h1>
+                <p>We're here to help. Reach out for quotes, consultations, or any questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p class="contact-text">Whether you have a ready project or just want to explore possibilities, our team is available to assist you. Get in touch and we'll respond promptly.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+971551265455">+971 55-1265455</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:infraup.cc@gmail.com">infraup.cc@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>Musaffah M4, Building 03, Office 01<br>Abu Dhabi, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Sunday – Thursday: 8:00 AM – 6:00 PM<br>Friday: 8:00 AM – 12:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick note -->
+                    <div class="contact-note">
+                        <p class="contact-note-text">
+                            <i class="fas fa-info-circle contact-note-icon"></i>
+                            For urgent inquiries, calling is the fastest way to reach us. We typically respond to emails within one business day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h3>Send Us a Message</h3>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Ahmed Al Mansouri" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="general">General Construction</option>
+                                <option value="residential">Residential Project</option>
+                                <option value="commercial">Commercial Project</option>
+                                <option value="renovation">Renovation & Maintenance</option>
+                                <option value="other">Other / Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project, location, size, timeline, or any specific requirements..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message &nbsp;<i class="fas fa-paper-plane"></i></button>
+                    </form>
+
+                    <!-- Success state -->
+                    <div class="form-success" id="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for contacting InfraUp Construction. We'll get back to you within one business day.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>InfraUp Construction — Musaffah M4</h3>
+            <p>Building 03, Office 01 &nbsp;·&nbsp; Abu Dhabi, UAE</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>InfraUp <span>Construction</span></h3>
+                    <p>Building stronger foundations for a better tomorrow — across Abu Dhabi and the UAE.</p>
+                    <div class="footer-contact-small">
+                        <a href="tel:+971551265455"><i class="fas fa-phone"></i> +971 55-1265455</a>
+                        <a href="mailto:infraup.cc@gmail.com"><i class="fas fa-envelope"></i> infraup.cc@gmail.com</a>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Musaffah M4, Abu Dhabi, UAE</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="services.html">General Construction</a>
+                    <a href="services.html">Residential</a>
+                    <a href="services.html">Commercial</a>
+                    <a href="services.html">Renovation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 InfraUp Construction Company Sole Proprietorship L.L.C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
