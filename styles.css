@@ -1466,7 +1466,6 @@ section {
 
 
 .service-card.show:hover,
-.why-item.show:hover,
 .mv-card.show:hover,
 .value-item.show:hover {
     transform: translateY(-10px);
