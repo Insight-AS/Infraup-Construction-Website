@@ -59,22 +59,56 @@ if (hamburger && navMenu) {
 
 // Contact form handler
 const contactForm = document.getElementById("contact-form");
-if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const btn = contactForm.querySelector("button[type='submit']");
-        const originalText = btn.textContent;
 
-        btn.textContent = "Sending...";
+if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const btn = contactForm.querySelector("button[type='submit']");
+        const originalText = btn.innerHTML;
+
+        const formData = {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            service: document.getElementById("service").value,
+            message: document.getElementById("message").value.trim()
+        };
+
+        btn.innerHTML = "Sending...";
         btn.disabled = true;
 
-        setTimeout(() => {
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || "Unable to send message.");
+            }
+
             contactForm.style.display = "none";
+
             const success = document.getElementById("form-success");
+
             if (success) {
                 success.style.display = "block";
             }
-        }, 1200);
+
+        } catch (error) {
+            console.error("Contact form error:", error);
+
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+
+            alert("Sorry, we couldn't send your message. Please try again or contact us by email.");
+        }
     });
 }
 
